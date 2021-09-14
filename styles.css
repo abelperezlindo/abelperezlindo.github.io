@@ -2,11 +2,12 @@ body{
   padding-top: 40px;
   background: rgb(149,117,205);
   background: linear-gradient(90deg, rgba(149,117,205,1) 0%, rgba(25,118,210,1) 53%, rgba(144,202,249,1) 100%);
+  font-family: 'Urbanist', sans-serif;
 }
 .content{
   width: 80%;
   max-width: 1000px;
-  background: #e3f2fd;
+  background: #ffffff;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -15,11 +16,52 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
+.form-wrapper{
+  padding: 10px;
+  position: relative;
+}
+.social {
+  font-size: 24px;
+  width: fit-content;
+  position: absolute;
+  right: 38px;
+  top: 16px;
+}
 
-.me{
-  color: #fff;
-  background-color: #283593;
-  width: 100%;
-  line-height: 10px;
-  padding: 20px;
+label {
+  font-size: .8rem;
+  color: #353333;
+}
+
+@media (max-width: 900px) {
+  body{
+    padding-top: 10px;
+    padding-bottom:  10px;
+  }
+  .content{
+    width: 90%;
+    padding-bottom: 0;
+  }
+  .row{
+    padding: 0;
+    margin: 0;
+  }
+  .social{
+    position: relative;
+    margin: 14px auto;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+  }
+  .btn-m{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contact-wm{
+    font-size: 2.3rem;
+  }
+  p, label{
+    font-size: 18px;
+  }
+  
 }
